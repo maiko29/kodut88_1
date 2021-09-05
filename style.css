@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+header .päis {
+    display: table;
+    background-position: center;
+    width: 100%;
+    color: #494949;
+}
+
+header .päisetekst {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+header section h1 {
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 42px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-family: "Gentium Basic";
+    margin-bottom: 0;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: 0;
+    
+}
+
+hr {
+    width: 60%;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-flex;
+    padding: 12px 12px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: rgba(30, 30, 32, 0.596);
+    font-size: 17px;
+}
+
+.konteiner img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: darkgray;
+    padding: 20px 40px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #494949;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    
+}
+
+footer a {
+    color: #494949;
+    text-decoration: none;
+}
+
+main div img {
+    width: 95%;
+
+}
+
+main h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494949;
+}
+.retseptigalerii {
+    display: flex;
+    flex-flow: column wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: column wrap;
+    display: -moz-flex;
+    -moz-flex-flow: column wrap;
+    justify-content: center;
+    -o-flex-flow: column wrap;
+    justify-content: center;
+}
+
+.galeriiKanne {
+    margin: 10px;
+    position: relative;
+    text-align:center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+}
+
+.konteineri-päis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 30px 9px red;
+
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
