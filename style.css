@@ -7,12 +7,18 @@ header .päis {
     color: #494949;
 }
 
+.bänner {
+    width: 100%;
+}
+
 header .päisetekst {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     
 }
+
+
 header section h1 {
     text-transform: uppercase;
     color: #494949;
@@ -86,6 +92,10 @@ main div img {
 
 }
 
+main .sisu img{
+    display: none;
+}
+
 main h2 {
     text-transform: uppercase;
     font-weight: 100;
@@ -107,7 +117,7 @@ main h2 {
 .galeriiKanne {
     margin: 10px;
     position: relative;
-    text-align:center;
+    text-align: center;
     -webkit-flex-basis: 300px;
     -moz-flex-basis: 300px;
     flex-basis: 300px;
@@ -146,4 +156,24 @@ footer {
 .sotsiaalmeedia img {
     width: 100%;
     margin-bottom: 5px;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 950px){
+    .retseptigalerii {
+        display: flex;
+        flex-flow: row wrap;
+        display: -webkit-flex;
+        -webkit-flex-flow: crow wrap;
+        display: -moz-flex;
+        -moz-flex-flow: row wrap;
+        justify-content: center;
+        -o-flex-flow: row wrap;
+        justify-content: center;
+    }
+    main .sisu img{
+        display: block;
+    }
+
+
 }
