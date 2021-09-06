@@ -9,8 +9,6 @@ header .päis {
 
 .bänner {
     width: 100%;
-    object-fit: cover;
-    max-height: 30vh;
 }
 
 header .päisetekst {
@@ -20,11 +18,6 @@ header .päisetekst {
     
 }
 
-header div .bänneri-konteiner {
-    display: flex;
-}
-
-
 
 header section h1 {
     text-transform: uppercase;
@@ -32,7 +25,7 @@ header section h1 {
     font-size: 42px;
     font-weight: 100;
     letter-spacing: 3px;
-    font-family: "Gentium Basic", serif;
+    font-family: "Gentium Basic";
     margin-bottom: 0;
 }
 
@@ -51,17 +44,19 @@ hr {
 }
 
 header nav ul {
-    display: flex;
+    display: block;
     margin: 0 auto;
     width: fit-content;
     text-align: center;
-    justify-content: space-evenly;
 }
 
 header nav ul li {
-    display: block;
+    display: inline-flex;
     padding: 12px 12px;
-    white-space: nowrap;
+}
+
+.bänneri-konteiner {
+    display: none;
 }
 
 nav ul li a{
@@ -74,7 +69,6 @@ nav ul li a{
 
 .konteiner img {
     width: 65%;
-    max-width: 300px;
     border-radius: 50%;
 }
 
@@ -97,18 +91,13 @@ footer a {
     text-decoration: none;
 }
 
-main div .fotosisu img {
-    width: 50%;
-    float: right;
-    vertical-align: center;
-    #margin: 10px;
-    padding: 10px;
-    display: none;
+main div img {
+    width: 95%;
+
 }
 
-main .tekstisisu {
-    text-align: justify;
-    margin: 5px;
+main .sisu img{
+    display: none;
 }
 
 main h2 {
@@ -119,14 +108,14 @@ main h2 {
 }
 .retseptigalerii {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     display: -webkit-flex;
-    -webkit-flex-flow: column;
+    -webkit-flex-flow: column wrap;
     display: -moz-flex;
-    -moz-flex-flow: column;
+    -moz-flex-flow: column wrap;
     justify-content: center;
-    -o-flex-flow: column;
-
+    -o-flex-flow: column wrap;
+    justify-content: center;
 }
 
 .galeriiKanne {
@@ -138,11 +127,6 @@ main h2 {
     flex-basis: 300px;
 }
 
-div .noinline{
-    display: block;
-    padding-bottom: 0;
-}
-
 .konteineri-päis {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -151,7 +135,7 @@ div .noinline{
     color: #ffffff;
     text-transform: uppercase;
     text-shadow: 3px 30px 9px black;
-    #white-space: nowrap;
+    white-space: nowrap;
     
 
     
@@ -163,23 +147,23 @@ div .noinline{
 }
 
 footer {
-    #overflow: hidden;
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
-
+    
 }
 footer div {
     display: inline;
-    vertical-align: center;
-    width: 50%;
-    align-items: center;
+}
 
+footer p {
+    display: inline;
 }
 
 .sotsiaalmeedia {
     width: 32px;
     float: right;
     margin: 0;
+    display: inline;
 }
 
 .sotsiaalmeedia img {
@@ -188,22 +172,18 @@ footer div {
 }
 
 @media only screen and (min-width: 950px){
-    body {
-        width: 950px;
-    }
-
     .retseptigalerii {
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         display: -webkit-flex;
-        -webkit-flex-flow: row;
+        -webkit-flex-flow: crow wrap;
         display: -moz-flex;
-        -moz-flex-flow: row;
+        -moz-flex-flow: row wrap;
         justify-content: center;
-        -o-flex-flow: row;
+        -o-flex-flow: row wrap;
         justify-content: center;
     }
-    main div .fotosisu img {
+    main .sisu img{
         display: block;
     }
 
